@@ -8,7 +8,7 @@ namespace PinCodeAndEmailEvaluator
     class PinCodeAndEmailRegexValidator
     {
         public static string PIN_REGEXUC4 = "^[0-9]{3}[ ]?[0-9]{3}$";
-        public static string EMAIL_REGEX = "^[0-9A-Za-z]+([+-_.][a-zA-Z]+)*[@][0-9A-Za-z]+$";
+        public static string EMAIL_REGEX = "^[0-9A-Za-z]+([+-_.][a-zA-Z]+)*[@][0-9A-Za-z]+[.][0-9A-Za-z]{2,3}$";
         public static string pinCode;
         public static string emailID;
 
