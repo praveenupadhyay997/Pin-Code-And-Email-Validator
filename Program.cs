@@ -22,6 +22,12 @@ namespace PinCodeAndEmailEvaluator
             validationKey = pinCodeAndEmailRegex.maximumDigitValidator(pinCode);
 
             Console.WriteLine(validationKey? "The Pin Code {0} is Valid.": "The Pin Code {0} is Not Valid.", pinCode);
+
+            Console.WriteLine("Enter the Email-ID=");
+            emailId = Console.ReadLine();
+            validationKey = pinCodeAndEmailRegex.emailIDValidator(emailId);
+
+            Console.WriteLine(validationKey ? "The Pin Code {0} is Valid." : "The Pin Code {0} is Not Valid.", emailId);
         }
     }
 }
