@@ -14,7 +14,14 @@ namespace PinCodeAndEmailEvaluator
            
             Console.WriteLine("===========================================");
             Console.WriteLine("Welcome to the Pin Code and Email Validator");
-            Console.WriteLine("===========================================");           
+            Console.WriteLine("===========================================");
+
+            bool validationKey;
+            Console.WriteLine("Enter the pin code=");
+            pinCode = Console.ReadLine();
+            validationKey = pinCodeAndEmailRegex.maximumDigitValidator(pinCode);
+
+            Console.WriteLine(validationKey? "The Pin Code {0} is Valid.": "The Pin Code {0} is Not Valid.", pinCode);
         }
     }
 }
