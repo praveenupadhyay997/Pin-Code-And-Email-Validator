@@ -7,7 +7,7 @@ namespace PinCodeAndEmailEvaluator
 {
     class PinCodeAndEmailRegexValidator
     {
-        public static string PIN_REGEXUC2 = "^(?![a-zA-Z#$%&'*+/=?^_`{|}~-][0-9]).{6}$";
+        public static string PIN_REGEXUC2 = "^((?![a-zA-Z#$%&'*+/=?^_`{|}~-])[0-9](?![a-zA-Z#$%&'*+/=?^_`{|}~-])){6}$";
         public static string pinCode;
         public static string emailID;
 
