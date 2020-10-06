@@ -8,7 +8,10 @@ namespace PinCodeAndEmailEvaluator
         public static string pinCode;
         public static string emailId;
         public static PinCodeAndEmailRegexValidator pinCodeAndEmailRegex = new PinCodeAndEmailRegexValidator();
-
+        /// <summary>
+        /// Main method recalling all the implementing functions
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {   
            
