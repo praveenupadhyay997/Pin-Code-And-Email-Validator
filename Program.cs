@@ -27,7 +27,7 @@ namespace PinCodeAndEmailEvaluator
             emailId = Console.ReadLine();
             validationKey = pinCodeAndEmailRegex.emailIDValidator(emailId);
 
-            Console.WriteLine(validationKey ? "The Pin Code {0} is Valid." : "The Pin Code {0} is Not Valid.", emailId);
+            Console.WriteLine(validationKey ? "The Email-Id {0} is Valid." : "The Email-Id {0} is Not Valid.", emailId);
         }
     }
 }
